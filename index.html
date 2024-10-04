@@ -877,13 +877,15 @@
                     <h1 class="mb-3 h3">Contact Us</h1>
                   </div>
                   <!-- Card body & form -->
-                  <form class="card-body px-0 pb-0 pt-5">
+                  <form class="card-body px-0 pb-0 pt-5" action="https://formspree.io/f/xanywqpq"
+                  method="POST">
                     <!-- Name -->
                     <div class="input-floating-label form-floating mb-4">
                       <input
                         type="text"
                         class="form-control bg-transparent"
                         id="floatingName"
+                        name="Name"
                         placeholder="Password"
                       />
                       <label for="floatingName">Your name</label>
@@ -895,6 +897,8 @@
                         class="form-control bg-transparent"
                         id="floatingInput"
                         placeholder="name@example.com"
+                        name="Email"
+
                       />
                       <label for="floatingInput">Email address</label>
                     </div>
@@ -905,6 +909,7 @@
                         class="form-control bg-transparent"
                         id="floatingNumber"
                         placeholder="Password"
+                        name="Mobile_Number"
                       />
                       <label for="floatingNumber">Phone number</label>
                     </div>
@@ -915,11 +920,13 @@
                         placeholder="Leave a comment here"
                         id="floatingTextarea2"
                         style="height: 100px"
+                        name="Message"
+
                       ></textarea>
                       <label for="floatingTextarea2">Message</label>
                     </div>
                     <!-- Button -->
-                    <button class="btn btn-lg btn-primary mb-0">
+                    <button class="btn btn-lg btn-primary mb-0" type="submit">
                       Send a message
                     </button>
                   </form>
